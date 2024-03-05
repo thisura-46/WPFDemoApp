@@ -13,6 +13,7 @@ D:\Personal\Learning Projects\WPF Crash Course\WiredBrainCoffee.CustomerApp\Wire
 D:\Personal\Learning Projects\WPF Crash Course\WiredBrainCoffee.CustomerApp\WiredBrainCoffee.CustomerApp\obj\Debug\net6.0-windows\WiredBrainCoffee.CustomerApp.AssemblyInfoInputs.cache
 D:\Personal\Learning Projects\WPF Crash Course\WiredBrainCoffee.CustomerApp\WiredBrainCoffee.CustomerApp\obj\Debug\net6.0-windows\WiredBrainCoffee.CustomerApp.AssemblyInfo.cs
 D:\Personal\Learning Projects\WPF Crash Course\WiredBrainCoffee.CustomerApp\WiredBrainCoffee.CustomerApp\obj\Debug\net6.0-windows\WiredBrainCoffee.CustomerApp.csproj.CoreCompileInputs.cache
+D:\Personal\Learning Projects\WPF Crash Course\WiredBrainCoffee.CustomerApp\WiredBrainCoffee.CustomerApp\obj\Debug\net6.0-windows\WiredBrainCoffee.CustomerApp.sourcelink.json
 D:\Personal\Learning Projects\WPF Crash Course\WiredBrainCoffee.CustomerApp\WiredBrainCoffee.CustomerApp\obj\Debug\net6.0-windows\WiredBrainCoffee.CustomerApp.dll
 D:\Personal\Learning Projects\WPF Crash Course\WiredBrainCoffee.CustomerApp\WiredBrainCoffee.CustomerApp\obj\Debug\net6.0-windows\refint\WiredBrainCoffee.CustomerApp.dll
 D:\Personal\Learning Projects\WPF Crash Course\WiredBrainCoffee.CustomerApp\WiredBrainCoffee.CustomerApp\obj\Debug\net6.0-windows\WiredBrainCoffee.CustomerApp.pdb
