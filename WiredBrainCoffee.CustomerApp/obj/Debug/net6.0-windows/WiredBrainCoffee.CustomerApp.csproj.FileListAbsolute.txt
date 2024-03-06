@@ -19,3 +19,8 @@ D:\Personal\Learning Projects\WPF Crash Course\WiredBrainCoffee.CustomerApp\Wire
 D:\Personal\Learning Projects\WPF Crash Course\WiredBrainCoffee.CustomerApp\WiredBrainCoffee.CustomerApp\obj\Debug\net6.0-windows\WiredBrainCoffee.CustomerApp.pdb
 D:\Personal\Learning Projects\WPF Crash Course\WiredBrainCoffee.CustomerApp\WiredBrainCoffee.CustomerApp\obj\Debug\net6.0-windows\WiredBrainCoffee.CustomerApp.genruntimeconfig.cache
 D:\Personal\Learning Projects\WPF Crash Course\WiredBrainCoffee.CustomerApp\WiredBrainCoffee.CustomerApp\obj\Debug\net6.0-windows\ref\WiredBrainCoffee.CustomerApp.dll
+D:\Personal\Learning Projects\WPF Crash Course\WiredBrainCoffee.CustomerApp\WiredBrainCoffee.CustomerApp\obj\Debug\net6.0-windows\Controls\HeaderControl.g.cs
+D:\Personal\Learning Projects\WPF Crash Course\WiredBrainCoffee.CustomerApp\WiredBrainCoffee.CustomerApp\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\Personal\Learning Projects\WPF Crash Course\WiredBrainCoffee.CustomerApp\WiredBrainCoffee.CustomerApp\obj\Debug\net6.0-windows\Controls\HeaderControl.baml
+D:\Personal\Learning Projects\WPF Crash Course\WiredBrainCoffee.CustomerApp\WiredBrainCoffee.CustomerApp\obj\Debug\net6.0-windows\View\CustomerView.g.cs
+D:\Personal\Learning Projects\WPF Crash Course\WiredBrainCoffee.CustomerApp\WiredBrainCoffee.CustomerApp\obj\Debug\net6.0-windows\View\CustomerView.baml

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Personal\Learning Projects\WPF Crash Course\WiredBrainCoffee.CustomerApp\WiredBrainCoffee.CustomerApp\App.xaml
-11407045341
+3923659896
 
-6-417684298
+8-403503824
 194-428966090
-MainWindow.xaml;
+Controls\HeaderControl.xaml;MainWindow.xaml;View\CustomerView.xaml;
 
-False
+True
 
