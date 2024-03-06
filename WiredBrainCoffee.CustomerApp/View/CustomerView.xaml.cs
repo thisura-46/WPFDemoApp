@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WiredBrainCoffee.CustomerApp.ViewModel;
+using WiredBrainCoffee.CustomersApp.Data;
 
 namespace WiredBrainCoffee.CustomerApp.View
 {
@@ -20,22 +22,29 @@ namespace WiredBrainCoffee.CustomerApp.View
     /// </summary>
     public partial class CustomerView : UserControl
     {
+        private CustomerViewModel _viewModel;
+
         public CustomerView()
         {
             InitializeComponent();
+            _viewModel = new CustomerViewModel(new CustomerDataProvider());
+            DataContext = _viewModel;
+            Loaded += CustomerView_Loaded;
+        }
+
+        private async void CustomerView_Loaded(object sender, RoutedEventArgs e)
+        {
+            await _viewModel.LoadAsync();
         }
 
         private void ButtonMoveNavigation_Click(object sender, RoutedEventArgs e)
         {
-            //var column = (int)CustomerListGrid.GetValue(Grid.ColumnProperty);
-            //var newColumn = column == 0 ? 2 : 0;
+            _viewModel.MoveNavigation();
+        }
 
-            //CustomerListGrid.SetValue(Grid.ColumnProperty, newColumn);
-
-            var column = Grid.GetColumn(CustomerListGrid);
-            var newColumn = column == 0 ? 2 : 0;
-
-            Grid.SetColumn(CustomerListGrid, newColumn);
+        private void ButtonAdd_Click(object sender, RoutedEventArgs e)
+        {
+            _viewModel.Add();
         }
     }
 }
