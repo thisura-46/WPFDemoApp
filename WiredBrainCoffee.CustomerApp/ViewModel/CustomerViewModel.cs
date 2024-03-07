@@ -1,5 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using System.Data.Common;
+using WiredBrainCoffee.CustomerApp.Command;
 using WiredBrainCoffee.CustomersApp.Data;
 using WiredBrainCoffee.CustomersApp.Model;
 
@@ -14,6 +15,9 @@ namespace WiredBrainCoffee.CustomerApp.ViewModel
         public CustomerViewModel(ICustomerDataProvider customerDataProvider)
         {
             _customerDataProvider = customerDataProvider;
+            AddCommand = new DelegateCommand(Add);
+            MoveNavigationCommand = new DelegateCommand(MoveNavigation);
+            DeleteCommand = new DelegateCommand(Delete, CanDelete);
         }
 
         public ObservableCollection<CustomerItemViewModel> Customers { get; } = new();
@@ -25,6 +29,7 @@ namespace WiredBrainCoffee.CustomerApp.ViewModel
             {
                 _selectedCustomer = value;
                 RaisePropertyChanged();
+                DeleteCommand.RaiseCanExecuteChanged();
             }
         }
 
@@ -37,6 +42,15 @@ namespace WiredBrainCoffee.CustomerApp.ViewModel
                 RaisePropertyChanged();
             }
         }
+
+        #region Commands
+        public DelegateCommand AddCommand { get; }
+
+        public DelegateCommand MoveNavigationCommand { get; }
+
+        public DelegateCommand DeleteCommand { get; }
+
+        #endregion
 
         public async Task LoadAsync()
         {
@@ -55,7 +69,9 @@ namespace WiredBrainCoffee.CustomerApp.ViewModel
             }
         }
 
-        internal void Add()
+        #region Functional Methods
+
+        private void Add(object? parameter)
         {
             var customer = new Customer { FirstName = "New" };
             var viewModel = new CustomerItemViewModel(customer);
@@ -63,10 +79,23 @@ namespace WiredBrainCoffee.CustomerApp.ViewModel
             SelectedCustomer = viewModel;
         }
 
-        internal void MoveNavigation()
+        private void MoveNavigation(object? parameter)
         {
             NavigationSide = NavigationSide == NavigationSide.Left? NavigationSide.Right : NavigationSide.Left;
         }
+
+        private void Delete(object? parameter)
+        {
+            if (SelectedCustomer is not null)
+            {
+                Customers.Remove(SelectedCustomer);
+                SelectedCustomer = null;
+            }
+        }
+
+        private bool CanDelete(object? parameter) => SelectedCustomer is not null;
+
+        #endregion
     }
 
     public enum NavigationSide
